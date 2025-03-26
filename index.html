@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link rel="icon" type="image/svg+xml" href="./assets/ico/favicon.svg" />
+        <link rel="icon" type="image/png" href="./assets/ico/favicon-96x96.png" sizes="96x96" />
+
+        <title>Tarea LABASAD</title>
+    </head>
+
+    <body>
+	    <div id="poster">
+            <!--Background-->
+            <div class="bg">
+                <img src="./assets/img/bg-cut.svg" alt="fondo del poster">
+            </div>
+
+            <!--Trompeta-->
+            <div class="trompeta instrumento" onclick="toggleTrumpet()">
+                <img src="./assets/img/trompeta-cuerpo.svg" alt="cuerpo de la tropmeta">
+                <img style="--position: 1" class="piston" src="./assets/img/trompeta-piston1.svg" alt="pistón 1">
+                <img style="--position: 2" class="piston" src="./assets/img/trompeta-piston2.svg" alt="pistón 2">
+                <img style="--position: 3" class="piston" src="./assets/img/trompeta-piston3.svg" alt="pistón 3">
+            </div>
+
+            <!--Piano-->
+            <div class="piano instrumento" onclick="togglePiano()">
+                <img src="./assets/img/piano-blancas.svg" alt="teclas del piano blancas">
+                <img style="--position: 1" class="tecla" src="./assets/img/piano-negra1.svg" alt="tecla negra 1">
+                <img style="--position: 2" class="tecla" src="./assets/img/piano-negra2.svg" alt="tecla negra 2">
+                <img style="--position: 3" class="tecla" src="./assets/img/piano-negra3.svg" alt="tecla negra 3">
+                <img style="--position: 4" class="tecla" src="./assets/img/piano-negra4.svg" alt="tecla negra 4">
+                <img style="--position: 5" class="tecla" src="./assets/img/piano-negra5.svg" alt="tecla negra 5">
+            </div>
+
+            <!--Platillo-->
+            <div class="platillos instrumento" onclick="toggleDrumsAccents()">
+                <div class="platillos-container">
+                    <img class="platillo" src="./assets/img/platillo-1.svg" alt="Parte superior de platillo">
+                    <img class="platillo" src="./assets/img/platillo-2.svg" alt="Parte inferior de platillo">
+                </div>
+            </div>
+
+            <!--Saxofón-->
+            <div class="saxofon instrumento" onclick="toggleSax()">
+                <img src="./assets/img/saxofon-cuerpo.svg" alt="cuerpo del saxofón">
+                <img class="saxofon-campana" src="./assets/img/saxofon-campana.svg" alt="boquilla del saxofón">
+            </div>
+
+            <!--Letras logo Jazz-->
+            <div class="logo-fecha-jazz">
+                <img src="./assets/img/logo-letras.svg" alt="Letras de jazz">
+                <img src="./assets/img/logo-musicDay.svg" alt="Texto music day">
+                <div>
+                    <p>12 junio</p>
+                    <p>20:00h</p>
+                </div>
+            </div>
+
+            <!--Tambor-->
+            <div class="tambor instrumento" onclick="toggleDrums()">
+                <img src="./assets/img/tambor-bombo.svg" alt="Bombo dle tambor">
+                <img style="--position: 1" class="baqueta" src="./assets/img/tambor-baqueta1.svg" alt="baqueta 1">
+                <img style="--position: 2" class="baqueta" src="./assets/img/tambor-baqueta2.svg" alt="baqueta 2">
+            </div>
+
+            <!--Trombón-->
+            <div class="trombon instrumento" onclick="toggleTrombon()">
+                <img class="trombon-cuerpo" src="./assets/img/trombon-cuerpo.svg" alt="cuerpo del trombón">
+                <img class="trombon-varilla" src="./assets/img/trombon-vara.svg" alt="vara del trombón">
+                <img class="trombon-campana" src="./assets/img/trombon-campana.svg" alt="campana del trombón">
+            </div>
+
+            <!--Bohemia jazz café-->
+            <h1>bohemia jazz café</h1>
+
+
+
+
+            <!-- Componentes del cartel aqui -->
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+    
+</html>
